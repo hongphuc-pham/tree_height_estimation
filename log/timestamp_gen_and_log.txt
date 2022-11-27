@@ -1,0 +1,39 @@
+# Timestamp tag for check point and best model
+from datetime import datetime, timezone
+# Timestamp tag for check point and best model
+from datetime import datetime, timezone
+import pytz
+
+def getCTimeStr():
+  py_timezone = pytz.timezone('Australia/Adelaide')
+  dt_string = datetime.now(py_timezone).strftime("(%H:%M:%S-%b_%d_%Y)")
+  # print("date and time =", dt_string)	
+  return str(dt_string)
+  
+import logging, time
+
+# Create and configure logger
+# Create a file then paste down here
+LOG_DIR = './log/test.log'
+
+logging.basicConfig(filename=LOG_DIR,filemode='w') 
+
+# Creating an object
+logger = logging.getLogger('writter')
+ 
+# Setting the threshold of logger to DEBUG
+logger.setLevel(logging.INFO)
+
+# đổi repo link chỗ này
+fh = logging.FileHandler(LOG_DIR)
+# đổi thresh level - DEBUG < INFO < WARNING < ERROR < CRITICAL 
+# log type level thấp ko in ra trên console nhưng vẫn lưu vào file .log
+fh.setLevel(logging.INFO)
+logger.addHandler(fh)
+
+# Test messages
+# logger.debug("Harmless debug Message")
+logger.info(f'|INFO| {getCTimeStr()}: message')
+# logger.warning("Its a Warning")
+# logger.error("Did you try to divide by zero")
+# logger.critical("Internet is down")

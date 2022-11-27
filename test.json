@@ -1,0 +1,44 @@
+{
+  "Data": {
+    "copyright": "\u00a9 2016 Google",
+    "tile_height": "512",
+    "image_width": "13312",
+    "image_height": "6656",
+    "tile_width": "512",
+    "imagery_type": 1,
+    "image_date": "2015-07"
+  },
+  "Projection": {
+    "pano_yaw_deg": "89.24",
+    "tilt_yaw_deg": "23.66",
+    "projection_type": "spherical",
+    "tilt_pitch_deg": "1.82"
+  },
+  "Links": [
+    {
+      "yawDeg": "269.5",
+      "road_argb": "0x80fdf872",
+      "description": "Locust St",
+      "panoId": "xS5UR5xL-urBF-N034YwPA"
+    },
+    {
+      "yawDeg": "89.89",
+      "road_argb": "0x80fdf872",
+      "description": "Locust St",
+      "panoId": "ffBRAQRATYtYLWyFwW7FYA"
+    }
+  ],
+  "Location": {
+    "elevation_wgs84_m": "227.070125",
+    "panoId": "RSW7f_FU5E17LTwSY7kRoA",
+    "description": "Locust St",
+    "country": "United States",
+    "region": "Pasadena, California",
+    "elevation_egm96_m": "261.010712",
+    "zoomLevels": "5",
+    "original_lng": "-118.131954",
+    "original_lat": "34.150503",
+    "lat": "34.150501",
+    "lng": "-118.132004"
+  }
+}
